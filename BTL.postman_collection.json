@@ -1,0 +1,775 @@
+{
+	"info": {
+		"_postman_id": "789b7f7d-dbcc-4aa4-929e-54f76fe6a5d9",
+		"name": "BTL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32183487",
+		"_collection_link": "https://blue-comet-391172.postman.co/workspace/KTPM_1~51208f44-be29-4652-bc0f-fdb6aae5db7a/collection/32183487-789b7f7d-dbcc-4aa4-929e-54f76fe6a5d9?action=share&source=collection_link&creator=32183487"
+	},
+	"item": [
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer pMoagQ7BKudRmZCgMqVTqsGglnWKWl",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loaiThanhToan\": \"STRIPE\",\r\n    \"dish\": [\r\n        {\r\n            \"id\": 12,\r\n            \"soLuong\": 5\r\n        },\r\n        {\r\n            \"id\": 13,\r\n            \"soLuong\": 2\r\n        },\r\n        {\r\n            \"id\": 14,\r\n            \"soLuong\": 10\r\n        }\r\n    ],\r\n    \"userShop\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/orders/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Sang",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Quang",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "QuangSang",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "GENERAL",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/D:/Download/Image/daddynoel.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create dish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 6XUMrpNhxJPIcCevh64bcJY3dlFD0Z",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ten\": \"cheesecake frappe\",\r\n    \"tienThucAn\": 60,\r\n    \"isAvailable\": \"true\",\r\n    \"buoi\": \"ALL\",\r\n    \"chuThich\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dishes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dishes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0RaaJ9is32XmPk1AIQHPrhT2eVz2Kg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ten\": \"tiramitsu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/categories/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create menu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0sPX2GUXz6CGPGxew1obfhX5tObMZ5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ten\": \"Menu3\",\r\n    \"dish\": [\r\n        9, 10\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/menus/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"menus",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update buoi",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0sPX2GUXz6CGPGxew1obfhX5tObMZ5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"buoi\": \"SANG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dishes/8/update-buoi/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dishes",
+						"8",
+						"update-buoi",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update trangthai",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ntYq29Mo0PkVMgdiY2CZVWMIGvvUKd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAvailable\": \"False\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dishes/7/update-trangthai/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dishes",
+						"7",
+						"update-trangthai",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update ten category",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0RaaJ9is32XmPk1AIQHPrhT2eVz2Kg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ten\": \"Do Man\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/categories/3/update-ten/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"categories",
+						"3",
+						"update-ten",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update ngayOrder",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0RaaJ9is32XmPk1AIQHPrhT2eVz2Kg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2025,\r\n    \"month\": 9,\r\n    \"day\": 17,\r\n    \"hour\": 9,\r\n    \"minute\": 15,\r\n    \"second\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/orders/91/update-ngayOrder/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						"91",
+						"update-ngayOrder",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate order",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer fuDHRkIVT6Tk1bfqkvmT7xCNThx1ct",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/orders/79/validate-order/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						"79",
+						"validate-order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate shop",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer R5cnhUGZ1ncMA7QUkoEMFcPCIdk9T4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"buoi\": \"SANG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/5/validate-shop/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"5",
+						"validate-shop",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 4eLHvzC8MUiw8AqqAanp5VhT8rSUhz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"buoi\": \"SANG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/orders/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list shops",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/shops/list-shop",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"shops",
+						"list-shop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shop make stats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer andvYaroSmenzAmYitc85oCLfvNkXY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/orders/shop-make-stats/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						"shop-make-stats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "superuser make stats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Tob07BFOhBBDYs0t1FYsF98Zh2D2kY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/orders/superuser-make-stats/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						"superuser-make-stats",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment dish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer OI1UH44FGO3JqOJReednVuOQKKUnH4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"rất ngon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dishes/10/comment-dish/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dishes",
+						"10",
+						"comment-dish",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment a comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer OI1UH44FGO3JqOJReednVuOQKKUnH4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"ngon nha, phải thử 1 lần trong đời\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/comments/1/comment-a-comment/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"comments",
+						"1",
+						"comment-a-comment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rate dish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer uu4diY0fk7CWSWyTcnhmOEY8Uyl7nZ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rating\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/dishes/8/rate-dish/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dishes",
+						"8",
+						"rate-dish",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grant_type\": \"password\",\r\n    \"client_id\": \"t84BXe99qZt3Vt4L1tqei6NZwtL50JfoPXqTtU08\",\r\n    \"client_secret\": \"b86JTicbDJD9aeBTQhVkdvCfMmgMZS4OGmZagygrRnSTRYPJaqrU2dzlliaky2Mwg6nnolkhWnhrW7gpEkBf8GiL7wOugdEWEaLI0nQoNGVpvOc3zuMlyyBmqP5SX1qL\",\r\n    \"username\": \"Tuan2\",\r\n    \"password\": \"Admin@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/o/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"o",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
