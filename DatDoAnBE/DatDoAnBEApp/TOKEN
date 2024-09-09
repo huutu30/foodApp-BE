@@ -1,0 +1,63 @@
+Tuan2 = {
+    "access_token": "EdUY1zTNv5LRgkPvBoye0FaG8leqf0",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "GuMpuZYOeOYe6XklOKQRFBkUTudElR"
+}
+
+QuocHuy = {
+    "access_token": "TEdE33SIyd77GNn7aUTR6tUirjIJQi",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "HIw6KCyd1JPcSEG9Cmz7JRjhvLftw4"
+}
+
+ThiThu = {
+    "access_token": "idAQIAeuNIREOH1JsdxKsUzh1K7wd5",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "fztMOH0q4yUhJE25LowLh6JTpEWgJ2"
+}
+
+MinhTam = {
+    "access_token": "pMoagQ7BKudRmZCgMqVTqsGglnWKWl",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "wYw9YGXWXaI1WImXR8gMbzoZOr8aWn"
+}
+
+AnTien = {
+    "access_token": "u8EUjeEuacpZ9cubGxwUuNJ7z67Au7",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "IbvFupdWiqitIA6EpUhroqGfbfPBmi"
+}
+
+1111cafe = {
+    "access_token": "IYiZqNaM4TO2fZ7GbFFkCnGwQ22f2r",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "noFDWptTI33PxQ6B4yDWIcFiD3uY5Z"
+}
+
+ManwahTaiwaneseHotPotTheGardenMall = {
+    "access_token": "sjh0jyfKkALwx5XrLyuHGzGTjduuu1",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "fnm2kVUqfatVUDGkDQb26jpCu5gBk5"
+}
+
+KAICOFFEE_HỒNGBÀNG = {
+    "access_token": "fuDHRkIVT6Tk1bfqkvmT7xCNThx1ct",
+    "expires_in": 36000,
+    "token_type": "Bearer",
+    "scope": "read write",
+    "refresh_token": "gUPiB8ERuaj3xLUxsMO1UoQNlQwfbx"
+}
